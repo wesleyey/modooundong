@@ -11,12 +11,15 @@ class PlaceAdmin(admin.ModelAdmin):
         "name",
         "address",
         "total_details",
+        "rating",
+        "creator",
     )
     list_filter = (
         "address",
         "details",
     )
     search_fields = (
+        "name",
         "address",
         "details",
     )
